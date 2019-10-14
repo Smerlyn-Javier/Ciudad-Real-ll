@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- <sidebar></sidebar>
+    <slider></slider>-->
+    <Release></Release>
+    <Footer class="footer"></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Sidebar from "../src/components/layouts/sidebar";
+import Slider from "../src/components/slider";
+import Release from "../src/components/release-card";
+import Footer from "../src/components/layouts/footer";
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Sidebar,
+    Footer,
+    Slider,
+    Release
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.footer {
+  position: relative;
+  margin-top: 40%;
 }
 </style>
